@@ -1,0 +1,5157 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "9d4cf81a-d2b8-4805-9297-ed5210fd040f",
+   "metadata": {},
+   "source": [
+    "### 1. Write a program to reverse a string.\n",
+    "a = input(\"Enter a string:\")\n",
+    "print(a[::-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c1f0ae38-759f-4f6f-927d-4535c18682f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: rar\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Palindrom\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2. Check if a string is a palindrome.\n",
+    "s = input(\"Enter a string:\")\n",
+    "reverse = s[::-1]\n",
+    "if(s==reverse):\n",
+    "    print(\"Palindrom\")\n",
+    "else:\n",
+    "    print(\"Not Palindrom\")\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "db4d4972-24d8-4597-954a-6c1cc35a7128",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "RAM\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 3. Convert a string to uppercase.\n",
+    "s = input(\"Enter a string:\")\n",
+    "print(s.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "289e2e98-e843-4594-97de-7f733cbdb274",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a string in upper case: RAM\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ram\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 4. Convert a string to lowercase.\n",
+    "s = input(\"enter a string in upper case:\")\n",
+    "print(s.lower())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3a960c3d-290f-43bd-8240-1976709d88c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is famous boy\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 5. Count the number of vowels in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "vowel = \"aeiou\"\n",
+    "count = 0\n",
+    "for i in s:\n",
+    "    if i in vowel:\n",
+    "        count+=1\n",
+    "print(count) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "7389af1e-e25f-41b5-abee-df0be664f654",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram kumar\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "r\n",
+      "m\n",
+      " \n",
+      "k\n",
+      "m\n",
+      "r\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 6. Count the number of consonants in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "vowel = \"aeiou\"\n",
+    "count = 0\n",
+    "for i in s:\n",
+    "    if i not in vowel:\n",
+    "        count+=1\n",
+    "        print(i)\n",
+    "print(count) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "75227508-e30f-47e8-b052-577c27d75d03",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram kumar\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ramkumar\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 7. Remove all whitespaces from a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "ans = \"\"\n",
+    "for i in s:\n",
+    "    if i == \" \":\n",
+    "        pass\n",
+    "    else:\n",
+    "        ans += i\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "fad91896-4fb0-4d6a-af85-eb4bdfb64c98",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram kumar bhagat\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "16\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 8. Find the length of a string without using the `len()` function.\n",
+    "s = input(\"Enter a string:\")\n",
+    "count = 0\n",
+    "for i in s:\n",
+    "    count+=1\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "4d49ff71-a3fd-42d1-aed3-1a96e669926a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: #\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "yes, exist\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 9. Check if a string contains a specific word.\n",
+    "specific = \"@#$%^&*?*\"\n",
+    "s = input(\"Enter a string:\")\n",
+    "for i in s:\n",
+    "    if i in specific:\n",
+    "        print(\"yes, exist\")\n",
+    "        break\n",
+    "    else:\n",
+    "        print(\"No, not Exist\")\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "8c77a6e3-c16c-4d4b-9db6-771b66fba299",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string :  new word\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "new Python\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 10. Replace a word in a string with another word.\n",
+    "s = input(\"Enter a string : \")\n",
+    "new_s  = s.replace(\"word\",\"Python\")\n",
+    "print(new_s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "91e98152-c3f1-475a-a9e0-be950fc79e0c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is a very cleaver person\n",
+      "Enter the counting word: ram\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 11. Count the occurrences of a word in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "word = input(\"Enter the counting word:\")\n",
+    "count = s.count(word)\n",
+    "print(count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "5eff8f3f-762c-4b7b-b87a-9c42801a5ecd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: radhika radhika radhika\n",
+      "Enter a word radhika\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 12. Find the first occurrence of a word in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "w = input(\"Enter a word\")\n",
+    "index = s.find(w)\n",
+    "print(index)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "01b1a58f-4ae6-4c64-bc35-9fea0f7b876a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is member of parliament ram ram ram sita ram\n",
+      "Enter a word: ram\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "45\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 13. Find the last occurrence of a word in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "w = input(\"Enter a word:\")\n",
+    "index = s.rfind(w)\n",
+    "print(index)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "c4ae5a5d-3b68-4da1-a49c-dca13eb4926e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is cleaverman\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['ram', 'is', 'cleaverman']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 14. Split a string into a list of words.\n",
+    "s = input(\"Enter a string:\")\n",
+    "print(s.split())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "bc637ca7-864d-466d-8ee3-60b519821fa0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ram sita Gita\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 15. Join a list of words into a string.\n",
+    "l = [\"ram\",\"sita\", \"Gita\"]\n",
+    "joined_word = \" \".join(l)\n",
+    "print(joined_word)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "a51cfa5e-61e0-44ee-aaa5-c855c4032176",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is a very cleaver man\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ram_is_a_very_cleaver_man\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 16. Convert a string where words are separated by spaces to one where words\n",
+    "# are separated by underscores.\n",
+    "s = input(\"Enter a string:\")\n",
+    "changed_word = s.replace(\" \",\"_\")\n",
+    "print(changed_word)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "7c17e91a-6914-4e3d-b126-85832133eb18",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is a\n",
+      "Enter a word: ram\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "yes,this word is string with specific word\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 17. Check if a string starts with a specific word or phrase.\n",
+    "s = input(\"Enter a string:\")\n",
+    "w = input(\"Enter a word:\")\n",
+    "ans = s.find(w)\n",
+    "if(ans == 0):\n",
+    "    print(\"yes,this word is string with specific word\")\n",
+    "else:\n",
+    "    print(\"No\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "08a75391-78be-430a-a588-57a2dc706a60",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is a ram\n",
+      "Enter a word: ram\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 18. Check if a string ends with a specific word or phrase.\n",
+    "s = input(\"Enter a string:\")\n",
+    "w = input(\"Enter a word:\")\n",
+    "ans = s.rfind(w)\n",
+    "# if(ans == len(s)-1):\n",
+    "#     print(\"yes,this word is Ending with specific word\")\n",
+    "# else:\n",
+    "#     print(\"No\")\n",
+    "ans"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "a48e9323-1f57-44d9-ada4-7147c4024096",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: yffv\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Yffv\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 19. Convert a string to title case (e.g., \"hello world\" to \"Hello World\").\n",
+    "s = input(\"Enter a string:\")\n",
+    "title_case_text = s.title()\n",
+    "print(title_case_text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "642370e0-d8a2-4790-bea8-943f4d86a843",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is an angry person and its opponet is also too angry\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "opponet\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 20. Find the longest word in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "text = s.split()\n",
+    "longest = max(text,key=len)\n",
+    "print(longest)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "ea5c18c3-2c0b-4b4e-b133-2fc835e7e90b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: ram is a cleaver man\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 21. Find the shortest word in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "text = s.split()\n",
+    "sortest = min(text,key=len)\n",
+    "print(sortest)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "aa605ccb-5c69-444a-b7bd-52d7fc6080d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: python is a fantastic language\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "language fantastic a is python\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 22. Reverse the order of words in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "words = s.split()\n",
+    "reversed_word = words[::-1]\n",
+    "ans = \" \".join(reversed_word)\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "29af2a09-2219-4468-9a4d-4c283fbd1d43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string kuaf jhSgf\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "No\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 23. Check if a string is alphanumeric.\n",
+    "s = input(\"Enter a string\")\n",
+    "if(s.isalnum()):\n",
+    "    print(\"Yes\")\n",
+    "else:\n",
+    "    print(\"No\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "7ee62ce4-ea3e-4c9e-8ce9-ef4ba0be7d93",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: rahul78945\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "78945\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 24. Extract all digits from a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "digits = \"\".join([char for char in s if char.isdigit()])\n",
+    "print(digits)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "70402c82-dcd5-4f35-99af-041d55987299",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: rahul7891\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "rahul\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 25. Extract all alphabets from a string.\n",
+    "\"avasv\".isalpha()\n",
+    "s = input(\"Enter a string:\")\n",
+    "a = \"\".join([char for char in s if char.isalpha()])\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "fe5123dd-cb57-42b8-b2bc-e1f6a6fdea43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: RahuLKumarBha\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Count the number of uppercase letters in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "# a = \"\" \n",
+    "count = 0\n",
+    "for i in s:\n",
+    "    if i.isupper():\n",
+    "        # a +=i\n",
+    "        count += 1 \n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "e1e78fd4-1233-4a79-a7a9-9789ae3b4907",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a String: RahulKumar\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 27. Count the number of lowercase letters in a string.\n",
+    "s = input(\"Enter a String:\")\n",
+    "count = 0\n",
+    "for i in s:\n",
+    "    if i.islower():\n",
+    "        count +=1\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "f8642eed-c6a2-4250-8c37-cc95a9320642",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: Rahul Kumar Bhagat\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "rAHUL kUMAR bHAGAT\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 28. Swap the case of each character in a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "ans = s.swapcase()\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "9ca259d5-6156-40cd-92b0-9c9fbf616efe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: Hello Rahul How look your World\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Rahul How look your \n"
+     ]
+    }
+   ],
+   "source": [
+    "# 29. Remove a specific word from a string.\n",
+    "s = input(\"Enter a string:\")\n",
+    "specific_word = \"World\"\n",
+    "new_text = s.replace(specific_word,\"\")\n",
+    "print(new_text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "8a99f4f1-5dd4-4085-a95c-b07f81fe6e54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "test@example.com: True\n",
+      "invalid-email: False\n",
+      "user@domain.co: True\n",
+      "another.test@sub.domain.com: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 30. Check if a string is a valid email address.\n",
+    "import re\n",
+    "\n",
+    "def is_valid_email(email):\n",
+    "    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'\n",
+    "    return re.match(pattern, email) is not None\n",
+    "\n",
+    "# Test cases\n",
+    "emails = [\"test@example.com\", \"invalid-email\", \"user@domain.co\", \"another.test@sub.domain.com\"]\n",
+    "\n",
+    "for email in emails:\n",
+    "    print(f\"{email}: {is_valid_email(email)}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "ef76047d-e193-4c3d-8935-de3071d058d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Email:test@example.com, username:test\n",
+      "Email:user@domin.co, username:user\n",
+      "Email:another.test@sub.domian.com, username:another.test\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 31. Extract the username from an email address string.\n",
+    "def Extract_username(email):\n",
+    "    username = email.split(\"@\")[0]\n",
+    "    return username\n",
+    "emails = [\"test@example.com\",\"user@domin.co\",\"another.test@sub.domian.com\"]\n",
+    "for i in emails:\n",
+    "    print(f\"Email:{i}, username:{Extract_username (i)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "66c7aa91-c772-4057-85f6-cb5caeba075e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Emails: test@example.com, Domain:example.com\n",
+      "Emails: user@domin.co, Domain:domin.co\n",
+      "Emails: another.test@sub.domian.com, Domain:sub.domian.com\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 32. Extract the domain name from an email address string.\n",
+    "def  Extract_Domain(email):\n",
+    "    domain = email.split(\"@\")[1]\n",
+    "    return domain\n",
+    "emails = [\"test@example.com\",\"user@domin.co\",\"another.test@sub.domian.com\"]\n",
+    "for i in emails:\n",
+    "    print(f\"Emails: {i}, Domain:{Extract_Domain(i)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "28d9cbcb-06e9-4555-b1fc-4622285842ce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 33. Replace multiple spaces in a string with a single space.\n",
+    "def Multiple_Spaces(text):\n",
+    "    words = text.split()\n",
+    "    return \" \".join(words)\n",
+    "\n",
+    "text = input(\"Enter a string:\")\n",
+    "print(f\"Original: {text}\")\n",
+    "print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "7a995b9f-d30a-4e9f-a077-95870429f2f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "https://www.example.com: True\n",
+      "ftp://example.com/resource.txt: True\n",
+      "http://localhost:8000: True\n",
+      "invalid-url: False\n",
+      "www.example.com: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 34. Check if a string is a valid URL.\n",
+    "from urllib.parse import urlparse\n",
+    "def is_valid_url(URL):\n",
+    "    parsed_url = urlparse(URL)\n",
+    "    return all([parsed_url.scheme,parsed_url.netloc])\n",
+    "\n",
+    "urls = [\n",
+    "    \"https://www.example.com\",\n",
+    "    \"ftp://example.com/resource.txt\",\n",
+    "    \"http://localhost:8000\",\n",
+    "    \"invalid-url\",\n",
+    "    \"www.example.com\"\n",
+    "]\n",
+    "\n",
+    "for url in urls:\n",
+    "    print(f\"{url}: {is_valid_url(url)}\")\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "581093ff-01a5-4c8a-8c31-cd9caae42ac9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "https://www.example.com:     https\n",
+      "ftp://example.com/resource.txt:     ftp\n",
+      "http://localhost:8000:     http\n",
+      "invalid-url:     invalid-url\n",
+      "www.example.com:     www.example.com\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 35. Extract the protocol (http or https) from a URL string.\n",
+    "def Extract_protocol(url):\n",
+    "    Url_split = url.split(\":\")[0]\n",
+    "    return Url_split\n",
+    "urls = [\n",
+    "    \"https://www.example.com\",\n",
+    "    \"ftp://example.com/resource.txt\",\n",
+    "    \"http://localhost:8000\",\n",
+    "    \"invalid-url\",\n",
+    "    \"www.example.com\"\n",
+    "]\n",
+    "for url in urls:\n",
+    "    print(f\"{url}:     {Extract_protocol(url)}\")\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "64984fa9-2157-445b-b6fd-77384de31a4a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "'h' : 1\n",
+      "'e' : 1\n",
+      "'l' : 3\n",
+      "'o' : 2\n",
+      "' ' : 1\n",
+      "'W' : 1\n",
+      "'r' : 1\n",
+      "'d' : 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 36. Find the frequency of each character in a string.\n",
+    "def character_frequency(text):\n",
+    "    frequency = {}\n",
+    "    for char in text:\n",
+    "        if char in frequency:\n",
+    "            frequency[char] +=1\n",
+    "        else:\n",
+    "            frequency[char] = 1\n",
+    "    return frequency\n",
+    "\n",
+    "text = \"hello World\"\n",
+    "frequency = character_frequency(text)\n",
+    "for char,count in frequency.items():\n",
+    "    print(f\"'{char}' : {count}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "fcf44017-2f5d-4b5a-b6e7-40e38c978ea7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello World This is a test isnt it\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 37. Remove all punctuation from a string.\n",
+    "import string\n",
+    "\n",
+    "def remove_punctuation(text):\n",
+    "    # Create a translation table that maps each punctuation character to None\n",
+    "    translator = str.maketrans('', '', string.punctuation)\n",
+    "    # Apply the translation table to the input text to remove punctuation\n",
+    "    return text.translate(translator)\n",
+    "text = \"Hello, World! This is a test... isn't it?\"\n",
+    "clean_text = remove_punctuation(text)\n",
+    "print(clean_text)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "ae48fbc4-610b-4b1e-8272-9ab8debae933",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: 68168164\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 38. Check if a string contains only digits.\n",
+    "def is_contain_digits(text):\n",
+    "    return text.isdigit()\n",
+    "s = input(\"Enter a string:\")\n",
+    "print(is_contain_digits(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "54a465dc-f356-4247-b4a4-f91395150abd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a String: hbajrrhelrn\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 39. Check if a string contains only alphabets.\n",
+    "def check_contain_alpha(text):\n",
+    "    return text.isalpha()\n",
+    "\n",
+    "s = input(\"Enter a String:\")\n",
+    "print(check_contain_alpha(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "da8abce3-2168-4463-8d4f-6635b3f127df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: Rahul\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['R', 'a', 'h', 'u', 'l']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 40. Convert a string to a list of characters.\n",
+    "s = input(\"Enter a string:\")\n",
+    "print(list(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "be2d8dc1-a9d5-4071-bb3f-d867af75a965",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "'listen' and 'silent': True\n",
+      "'triangle' and 'integral': True\n",
+      "'apple' and 'pale': False\n",
+      "'night' and 'thing': True\n",
+      "'hello' and 'world': False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 41. Check if two strings are anagrams.\n",
+    "def anagrams(str1,str2):\n",
+    "    return sorted(str1) == sorted(str2)\n",
+    "strings = [\n",
+    "    (\"listen\", \"silent\"),\n",
+    "    (\"triangle\", \"integral\"),\n",
+    "    (\"apple\", \"pale\"),\n",
+    "    (\"night\", \"thing\"),\n",
+    "    (\"hello\", \"world\")\n",
+    "]\n",
+    "\n",
+    "for str1, str2 in strings:\n",
+    "    print(f\"'{str1}' and '{str2}': {anagrams(str1, str2)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "4c91cb53-db14-4f70-ab65-2d27fc73eb15",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original: Hello, World!\n",
+      "Encoded: Khoor, Zruog!\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 42. Encode a string using a Caesar cipher.\n",
+    "def caesar_cipher(text,shift):\n",
+    "    result = []\n",
+    "    for char in text:\n",
+    "        if char.isalpha():\n",
+    "            shift_base = ord(\"A\") if char.isupper() else ord('a')\n",
+    "            shifted_char = chr((ord(char) - shift_base + shift)% 26 + shift_base)\n",
+    "            result.append(shifted_char)\n",
+    "        else:\n",
+    "            result.append(char)\n",
+    "    return \"\".join(result)\n",
+    "\n",
+    "text = \"Hello, World!\"\n",
+    "shift = 3\n",
+    "encoded_text = caesar_cipher(text, shift)\n",
+    "\n",
+    "print(f\"Original: {text}\")\n",
+    "print(f\"Encoded: {encoded_text}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "44beb2b8-9777-4192-8817-c6c5d2df5bd8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Encoded: Khoor, Zruog!\n",
+      "Decoded: Hello, World!\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 43. Decode a Caesar cipher encoded string.\n",
+    "def decode_caesar_cipher(text, shift):\n",
+    "    result = []\n",
+    "    for char in text:\n",
+    "        if char.isalpha():\n",
+    "            shift_base = ord('A') if char.isupper() else ord('a')\n",
+    "            shifted_char = chr((ord(char) - shift_base - shift) % 26 + shift_base)\n",
+    "            result.append(shifted_char)\n",
+    "        else:\n",
+    "            result.append(char)\n",
+    "    return ''.join(result)\n",
+    "\n",
+    "# Test case\n",
+    "encoded_text = \"Khoor, Zruog!\"\n",
+    "shift = 3\n",
+    "decoded_text = decode_caesar_cipher(encoded_text, shift)\n",
+    "\n",
+    "print(f\"Encoded: {encoded_text}\")\n",
+    "print(f\"Decoded: {decoded_text}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "e90329a7-7f82-4d31-919f-936826da3fee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The most frequent word is 'this' with a frequency of 2.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 44. Find the most frequent word in a string.\n",
+    "def most_frequent_word(text):\n",
+    "    words =  text.split()\n",
+    "    word_count = {}\n",
+    "    for word in words:\n",
+    "        word = word.lower()\n",
+    "        if word in word_count:\n",
+    "            word_count[word]+=1\n",
+    "        else:\n",
+    "            word_count[word] = 1\n",
+    "    most_frequent = max(word_count,key=word_count.get)\n",
+    "    return most_frequent,word_count[most_frequent]\n",
+    "text = \"This is a test. This test is only a test.\"\n",
+    "most_frequent, frequency = most_frequent_word(text)\n",
+    "\n",
+    "print(f\"The most frequent word is '{most_frequent}' with a frequency of {frequency}.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "4e3b9c51-b52f-4775-aeda-22a43c5056c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'test', 'a', 'this', 'is', 'only'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def find_unique_words(text):\n",
+    "    puntuation = \".,!?;:'\\\"-()[]{}<>\"\n",
+    "    cleaned_text = \"\".join(char if char not in puntuation else \"\" for char in text)\n",
+    "    words = cleaned_text.split()\n",
+    "    unique_words =  set()\n",
+    "    \n",
+    "    for word in words:\n",
+    "        unique_words.add(word.lower())\n",
+    "    return unique_words\n",
+    "text = \"This is a test. this Test is only a test.\"\n",
+    "unique_words = find_unique_words(text)\n",
+    "print(unique_words)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "d5444b5d-87e1-493c-b8fd-2cad69971e06",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Text: This is a test. Counting syllables can be tricky!\n",
+      "Syllable count: 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 46. Count the number of syllables in a string.\n",
+    "def Count_syllables(text):\n",
+    "    Vowels = \"aeiouAEIOU\"\n",
+    "    text = text.lower()\n",
+    "    \n",
+    "    syllable_count = 0\n",
+    "    in_vowels_group = False\n",
+    "    for char in text:\n",
+    "        if char in Vowels:\n",
+    "            if not in_vowels_group:\n",
+    "                syllable_count += 1\n",
+    "                in_vowels_group = True\n",
+    "            else:\n",
+    "                in_vowels_group = False\n",
+    "    return syllable_count\n",
+    "\n",
+    "text = \"This is a test. Counting syllables can be tricky!\"\n",
+    "syllables = Count_syllables(text)\n",
+    "\n",
+    "print(f\"Text: {text}\")\n",
+    "print(f\"Syllable count: {syllables}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "80adc721-6fd7-4568-b0ce-ea19299aa009",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "'HelloWorld' contains special characters: False\n",
+      "'Hello, World!' contains special characters: True\n",
+      "'Special#Characters$' contains special characters: True\n",
+      "'NoSpecialCharacters' contains special characters: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 47. Check if a string contains any special characters.\n",
+    "def check_special_character(text):\n",
+    "    special_charatcter = set(\"!@#$%^&*()-_=+[{]}\\|;:'\\\",<.>/?`~ \")\n",
+    "    for char in text:\n",
+    "        if char in special_charatcter:\n",
+    "            return True\n",
+    "    return False\n",
+    "\n",
+    "text1 = \"HelloWorld\"\n",
+    "text2 = \"Hello, World!\"\n",
+    "text3 = \"Special#Characters$\"\n",
+    "text4 = \"NoSpecialCharacters\"\n",
+    "\n",
+    "print(f\"'{text1}' contains special characters: {check_special_character(text1)}\")\n",
+    "print(f\"'{text2}' contains special characters: {check_special_character(text2)}\")\n",
+    "print(f\"'{text3}' contains special characters: {check_special_character(text3)}\")\n",
+    "print(f\"'{text4}' contains special characters: {check_special_character(text4)}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "a2683db4-8e3a-4f56-aa2b-2aa3fbe4478f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original: 'This is a simple test starting.'\n",
+      "After inserting 'very' at position 2: 'This is very a simple test starting.'\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 49. Insert a word at the nth position in a string.\n",
+    "def insert_nth_word(text,word,n):\n",
+    "    words = text.split()\n",
+    "    if n<0:\n",
+    "        n=0\n",
+    "    elif n> len(words):\n",
+    "        n = len(words)\n",
+    "    words.insert(n,word)\n",
+    "    return \" \".join(words)\n",
+    "\n",
+    "text1 = \"This is a simple test starting.\"\n",
+    "word1 = \"very\"\n",
+    "position1 = 2\n",
+    "\n",
+    "print(f\"Original: '{text1}'\")\n",
+    "print(f\"After inserting '{word1}' at position {position1}: '{insert_nth_word(text1, word1, position1)}'\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "459fb13a-20f3-4691-a9e0-07e0f38ee3d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['name', 'age', 'city']\n",
+      "['Alice', '30', 'New York']\n",
+      "['Bob', '25', 'Los Angeles']\n",
+      "['Charlie', '35', 'Chicago']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 50. Convert a CSV string to a list of lists.\n",
+    "def csv_to_list_of_lists(csv_string):\n",
+    "    # Split the CSV string into lines\n",
+    "    lines = csv_string.strip().split('\\n')\n",
+    "    \n",
+    "    # Split each line into a list of values\n",
+    "    list_of_lists = [line.split(',') for line in lines]\n",
+    "    \n",
+    "    return list_of_lists\n",
+    "\n",
+    "# Test case\n",
+    "csv_string = \"\"\"name,age,city\n",
+    "Alice,30,New York\n",
+    "Bob,25,Los Angeles\n",
+    "Charlie,35,Chicago\"\"\"\n",
+    "\n",
+    "list_of_lists = csv_to_list_of_lists(csv_string)\n",
+    "\n",
+    "for row in list_of_lists:\n",
+    "    print(row)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "eb220485-5e0a-4b34-8db4-b5774abb4fbb",
+   "metadata": {},
+   "source": [
+    "Tuple Based Practice Problem :"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "54ed8345-ed46-4f0b-807f-45641c7d4894",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 1. Create a tuple with integers from 1 to 5.\n",
+    "t = (1,2,3,4,5)\n",
+    "print(t)\n",
+    "type(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4d08df06-40d5-4466-8ae5-e4762303d72f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 2. Access the third element of a tuple.\n",
+    "t[2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "0bcb0173-2c37-4849-bd44-1b37f783ee9e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 3. Find the length of a tuple without using the `len()` function.\n",
+    "count = 0\n",
+    "for i in t:\n",
+    "    count +=1\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "14471b08-23a3-49b8-b603-ac2c78f57b48",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The element 2 occurs 2 time in the tuple.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 4. Count the occurrences of an element in a tuple.\n",
+    "my_tuple = (1,2,3,4,5,2,3,4,7,6)\n",
+    "ele =  2\n",
+    "occurences = my_tuple.count(ele)\n",
+    "print(f\"The element {ele} occurs {occurences} time in the tuple.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "72195ab3-4f12-4d55-9de5-c6e40ea18cc5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 5. Find the index of the first occurrence of an element in a tuple.\n",
+    "ele = 5\n",
+    "t = (1,2,3,4,5,6,7,9,2,1,5,6,4)\n",
+    "for i in range(len(t)):\n",
+    "    if t[i] == ele:\n",
+    "        print(i)\n",
+    "        break\n",
+    "\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "32fe022d-e335-4310-805e-c445af9d4444",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Yes,This 4 element is exist in this tuple\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 6. Check if an element exists in a tuple.\n",
+    "t = (1,2,3,4,5,6,7,8,9,10)\n",
+    "element = 4\n",
+    "exist = element in t\n",
+    "if exist:\n",
+    "    print(f\"Yes,This {element} element is exist in this tuple\")\n",
+    "else:\n",
+    "    print(f\"no,This {element} element is exist in this tuple\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd887aa9-4aa8-46ec-aa18-7d97f8b485b8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "d6562550-edfb-41c1-8fd5-13429a63d04f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 6, 7]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 7. Convert a tuple to a list.\n",
+    "t = (1,2,3,4,5,6,7)\n",
+    "print(list(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "3d4316d9-1ec6-4554-9c18-9c1e75892368",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 8. Convert a list to a tuple.\n",
+    "l = [1,2,3,4,5,6,7,8,9]\n",
+    "print(tuple(l))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "845feb71-039b-4e25-a302-9e29447e830e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a:1,b: 2, c: 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 9. Unpack the elements of a tuple into variables.\n",
+    "my_tuple = (1,2,3)\n",
+    "a,b,c = my_tuple\n",
+    "print(f\"a:{a},b: {b}, c: {c}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "ec5df4be-8956-434a-92a4-1c4b3a9cb41c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(2, 4, 6, 8, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 10. Create a tuple of even numbers from 1 to 10.\n",
+    "even_numbers = tuple(x for x in range(1, 11) if x % 2 == 0)\n",
+    "\n",
+    "# Print the tuple\n",
+    "print(even_numbers)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "98a24bfc-c62b-4c50-95f7-d0cd92b72943",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 3, 5, 7, 9)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 11. Create a tuple of odd numbers from 1 to 10.\n",
+    "odd_numbers = tuple(x for x in range(1,11) if x % 2 != 0)\n",
+    "print(odd_numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "a3381381-3d83-418f-9e77-d489cc66360d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 12. Concatenate two tuples.\n",
+    "t1 = (1,2,3,4,5)\n",
+    "t2 = (6,7,8,9,10)\n",
+    "print(t1+t2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "d8f220fe-a3c2-4666-b8b6-6194dc4d97d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 13. Repeat a tuple three times.\n",
+    "t1 = (1,2,3,4,5)\n",
+    "print(t1*3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "de1b52a3-6893-48a2-9f18-1dd0a0465c8e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The tuple is not empty\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 14. Check if a tuple is empty.\n",
+    "t = (1,2,3,4,5,6,6,7)\n",
+    "if len(t) ==0:\n",
+    "    print(\"The tuple is empty\")\n",
+    "else:\n",
+    "    print(\"The tuple is not empty\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "85bbefa6-a29d-4fb1-ae91-be404491e817",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, (3, 4), (5, 6, 7))\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 15. Create a nested tuple.\n",
+    "t = (1,2,(3,4),(5,6,7))\n",
+    "print(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6894a088-1b89-4e75-92a6-5534dc57641e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t[2][0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "d8bed81e-bbc9-40a1-93c1-ae5a3571af3a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(42,)\n",
+      "<class 'tuple'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 17. Create a tuple with a single element.\n",
+    "single_ele_tuple = (42,)\n",
+    "print(single_ele_tuple)\n",
+    "print(type(single_ele_tuple))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "87406c6e-6c05-4701-94f5-d76cd286a7d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 18. Compare two tuples.\n",
+    "t1 = (1,2,3)\n",
+    "t2 = (1,2,3)\n",
+    "t3 = (4,5,6)\n",
+    "print(t1 == t2)\n",
+    "print(t2 == t3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "56a3216f-8a37-430a-9815-8d1c6f9bd587",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The tuple has been deleted.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 19. Delete a tuple.\n",
+    "my_tuple = (1,2,3,4,5,6)\n",
+    "del my_tuple\n",
+    "try:\n",
+    "    print(my_tuple)\n",
+    "except NameError:\n",
+    "    print(\"The tuple has been deleted.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "b39108d7-9be3-401c-a690-68f5901f74fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(3, 4, 5, 6)\n",
+      "(1, 2, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 20. Slice a tuple.\n",
+    "my_tuple = (1,2,3,4,5,6)\n",
+    "slice1 = my_tuple[2:]\n",
+    "slice2 = my_tuple[:3]\n",
+    "print(slice1)\n",
+    "print(slice2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "b9e09cf2-059c-48c9-a38d-aa050b492c69",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 21. Find the maximum value in a tuple.\n",
+    "t = (1,2,3,4,5,6,7,8)\n",
+    "print(max(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "ab99170d-d978-41c4-b70a-5ee66fe2d224",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 22. Find the minimum value in a tuple.\n",
+    "t = (1,2,3,4,5,6,7,8)\n",
+    "print(min(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "947b3828-7918-44bd-b97f-35430a665b15",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('r', 'a', 'm', ' ', 'i', 's', ' ', 'a', ' ', 'c', 'l', 'e', 'a', 'v', 'e', 'r', ' ', 'p', 'e', 'r', 's', 'o', 'n')\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 23. Convert a string to a tuple of characters.\n",
+    "s = \"ram is a cleaver person\"\n",
+    "print(tuple(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "3d7fab3a-ade2-4000-9da0-69b5dee44540",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ram is a cleaver person\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 24. Convert a tuple of characters to a string.\n",
+    "t = ('r', 'a', 'm', ' ', 'i', 's', ' ', 'a', ' ', 'c', 'l', 'e', 'a', 'v', 'e', 'r', ' ', 'p', 'e', 'r', 's', 'o', 'n')\n",
+    "result = ''.join(t)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "225b14bf-5d01-4e6c-94c8-14cf92d9bef9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 'Hello', 3.14, True, [1, 2, 3], (4, 5), {'a': 1, 'b': 2})\n",
+      "Element 1, Type: <class 'int'>\n",
+      "Element Hello, Type: <class 'str'>\n",
+      "Element 3.14, Type: <class 'float'>\n",
+      "Element True, Type: <class 'bool'>\n",
+      "Element [1, 2, 3], Type: <class 'list'>\n",
+      "Element (4, 5), Type: <class 'tuple'>\n",
+      "Element {'a': 1, 'b': 2}, Type: <class 'dict'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 25. Create a tuple from multiple data types.\n",
+    "mixed_tuple = (1, \"Hello\", 3.14, True, [1, 2, 3], (4, 5), {'a': 1, 'b': 2})\n",
+    "print(mixed_tuple)\n",
+    "for i in mixed_tuple:\n",
+    "    print(f\"Element {i}, Type: {type(i)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "2afda261-4c4b-4504-af5b-0876d84a1b2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Are t1 and t2 identical? True\n",
+      "Are t1 and t2 identical? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 26. Check if two tuples are identical.\n",
+    "t1 = (1,2,3,4,5,6,7)\n",
+    "t2 = (1,2,3,4,5,6,7)\n",
+    "t3 = (3,4,5,6,7,8,9)\n",
+    "identical_1_2 = t1 == t2\n",
+    "identical_2_3 = t2 == t3\n",
+    "print(f\"Are t1 and t2 identical? {identical_1_2}\")\n",
+    "print(f\"Are t1 and t2 identical? {identical_2_3}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "a4825f70-770f-46f4-9a68-824b9e775c12",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 5, 7, 8, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 27. Sort the elements of a tuple.\n",
+    "t = (1,5,7,8,9,2,3)\n",
+    "print(sorted(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "b3aa8796-9e54-4faa-b380-86a161610545",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('1', '2', '3', '4', '5', '6', '8', '9', '10')\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 28. Convert a tuple of integers to a tuple of strings.\n",
+    "t1 = (1,2,3,4,5,6,8,9,10)\n",
+    "str_tuple = tuple(str(i) for i in t1)\n",
+    "print(str_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "5d688bbd-eaa9-4f3f-b6c2-5f0c0f7f2dfa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 8, 9, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 29. Convert a tuple of strings to a tuple of integers.\n",
+    "t1 = ('1', '2', '3', '4', '5', '6', '8', '9', '10')\n",
+    "int_tuple = tuple(int(i) for i in t1)\n",
+    "print(int_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "0d095cbe-ff6c-4fb2-85ba-38bca5268290",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 30. Merge two tuples.\n",
+    "t1 = (1,2,3,4,5,6)\n",
+    "t2 = (7,8,9,10,11,12,1,3)\n",
+    "print(t1 + t2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "91165320-b195-4e49-9b1f-f7703ce71f5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 31. Flatten a nested tuple.\n",
+    "def flatern_tuple(nested_tuple):\n",
+    "    flat_tuple = ()\n",
+    "    for item in nested_tuple:\n",
+    "        if isinstance(item,tuple):\n",
+    "            flat_tuple +=flatern_tuple(item)\n",
+    "        else:\n",
+    "            flat_tuple +=(item,)\n",
+    "    return flat_tuple\n",
+    "nested_tuple = (1,2,(3,4),(5,6,7),(8,9))\n",
+    "flatened_tuple = flatern_tuple(nested_tuple)\n",
+    "print(flatened_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "1a021e04-7551-46ad-bddf-d52bda0453dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(2, 3, 5, 7, 11)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 32. Create a tuple of the first 5 prime numbers.\n",
+    "prime_tuple = (2,3,5,7,11)\n",
+    "print(prime_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "4414c8ce-4d20-49e1-9d26-a9e43e47869e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 2, 1) is a palindrome: True\n",
+      "('a', 'b', 'c', 'b', 'a') is a palindrome: True\n",
+      "(1, 2, 3, 4, 5) is a palindrome: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 33. Check if a tuple is a palindrome.\n",
+    "def is_tuple_palindrome(t):\n",
+    "    return t == t[::-1]\n",
+    "t1 = (1,2,3,2,1)\n",
+    "t2 = (\"a\",'b','c','b','a')\n",
+    "t3 = (1,2,3,4,5)\n",
+    "\n",
+    "print(f\"{t1} is a palindrome: {is_tuple_palindrome(t1)}\")  # Output: True\n",
+    "print(f\"{t2} is a palindrome: {is_tuple_palindrome(t2)}\")  # Output: True\n",
+    "print(f\"{t3} is a palindrome: {is_tuple_palindrome(t3)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "03f4c931-9d1d-4ca7-96c8-b7cd0a1f5734",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 4, 9, 16, 25)\n"
+     ]
+    }
+   ],
+   "source": [
+    "squared_tuple = tuple(x**2 for x in range(1,6))\n",
+    "print(squared_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "975070d1-06cf-44f7-b4e4-39941f2884c2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 4, 6, 8, 10)"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 35. Filter out all even numbers from a tuple.\n",
+    "t = (1,2,3,4,5,6,7,8,9,10,11)\n",
+    "# for i in t:\n",
+    "#     if(i%2==0):\n",
+    "#         print(i)\n",
+    "filtered_tuple = tuple(x for x in t if x%2==0)\n",
+    "filtered_tuple"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "27cc427d-9d3f-4227-981c-2bf55b6a3b8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 4, 6, 8, 10, 12, 14, 16, 18)"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 36. Multiply all elements in a tuple by 2.\n",
+    "\n",
+    "t = (1,2,3,4,5,6,7,8,9)\n",
+    "ans = tuple(x*2 for x in t)\n",
+    "ans"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "45b30fb4-2f6d-4c98-8c65-c511f67535d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(80, 36, 30, 51, 87, 65, 100, 89, 43, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 37. Create a tuple of random numbers.\n",
+    "import random\n",
+    "random_number = tuple(random.randint(1,100) for _ in range(10))\n",
+    "print(random_number)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "8f718061-4382-46ae-9317-ba68ff758264",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Yes\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 38. Check if a tuple is sorted.\n",
+    "t = (1,2,3,4,5)\n",
+    "if(sorted(t)):\n",
+    "    print(\"Yes\")\n",
+    "else:\n",
+    "    print(\"No\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "719b4262-45ac-4a57-9f15-8d7f9bbd0aa2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(4, 5, 6, 7, 8, 9, 1, 2, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 39. Rotate a tuple to the left by `n` positions.\n",
+    "def rotate_n_left(tup,n):\n",
+    "    return tup[n:] + tup[:n]\n",
+    "t = (1,2,3,4,5,6,7,8,9)\n",
+    "n = 3\n",
+    "rotate_tuple = rotate_n_left(t,n)\n",
+    "print(rotate_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "f6458909-1a65-4bac-b4ea-35d67b7b1648",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(5, 6, 7, 1, 2, 3, 4)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 40. Rotate a tuple to the right by `n` positions.\n",
+    "def rotate_n_times_right(tup,n):\n",
+    "    return tup[len(tup)-n:] + tup[:len(tup)-n]\n",
+    "\n",
+    "t = (1,2,3,4,5,6,7)\n",
+    "n = 3\n",
+    "rotate_tuple = rotate_n_times_right(t,n)\n",
+    "print(rotate_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "f3cf8c67-5344-4868-a126-3b9886a40bcb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(0, 1, 1, 2, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 41. Create a tuple of the first 5 Fibonacci numbers.\n",
+    "def fib_tup(n):\n",
+    "    fib = [0,1]\n",
+    "    for i in range(2,n):\n",
+    "        fib.append(fib[-1]+fib[-2])\n",
+    "    return tuple(fib[:n])\n",
+    "n = 5\n",
+    "fibnacci = fib_tup(n)\n",
+    "print(fibnacci)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "8e4ee9b0-1fbe-4f01-a01d-79c258ff2c28",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter values separated by speaces: 7 9 9  1 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Tuple created from user input: ('7', '9', '9', '1', '6')\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 42. Create a tuple from user input.\n",
+    "user_input = input(\"Enter values separated by speaces:\")\n",
+    "\n",
+    "value = user_input.split()\n",
+    "user_tuple = tuple(value)\n",
+    "print(\"Tuple created from user input:\",user_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "a6c598e7-7abd-4b41-b535-9e63a2077bb3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 5, 3, 4, 2)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 43. Swap two elements in a tuple.\n",
+    "def swap_two_element(t,i1,i2):\n",
+    "    k = list(t)\n",
+    "    temp = k[i1]\n",
+    "    k[i1] = k[i2]\n",
+    "    k[i2] = temp\n",
+    "    return(tuple(k))\n",
+    "t = (1,2,3,4,5)\n",
+    "i1,i2 = 1,4\n",
+    "print(swap_two_element(t,i1,i2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "d4cd8b2c-5a6a-4f2d-b79e-abe068082fd5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(78, 9, 7, 6, 5, 4, 3, 2, 1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 44. Reverse the elements of a tuple.\n",
+    "def reverse_the_tuple(t):\n",
+    "    temp = list(t)\n",
+    "    return(tuple(temp[::-1]))\n",
+    "t = (1,2,3,4,5,6,7,9,78)\n",
+    "print(reverse_the_tuple(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "59ee6b72-3f86-4ac8-b31d-bfc84d1902a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 4, 8, 16)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 45. Create a tuple of the first `n` powers of 2.\n",
+    "def power_of_two(n):\n",
+    "    return tuple(2**i for i in range(n))\n",
+    "n = 5\n",
+    "power = power_of_two(n)\n",
+    "print(power)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "09ad5ca2-205e-4ffb-8f0f-7ac8dfee2e5a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('aegegegegoiuowejoiwe', 20)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 46. Find the longest string in a tuple of strings.\\\n",
+    "def longest_string_in_tuple(t):\n",
+    "    l = 0\n",
+    "    ans = \"\"\n",
+    "    for i in t:\n",
+    "        if(len(i)>l):\n",
+    "            ans = i\n",
+    "            l = len(i)\n",
+    "    return ans,l\n",
+    "t = (\"ergerg\",\"agetg4gteg\",\"aethrth\",\"aegegegegoiuowejoiwe\",\"hibriaegieb\")\n",
+    "print(longest_string_in_tuple(t))\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "849b06cf-5e9d-4607-8442-04364342f0a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('ergerg', 6)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 47. Find the shortest string in a tuple of strings.\n",
+    "def sortest_string_in_tuple(t):\n",
+    "    l = 999999\n",
+    "    ans = \"\"\n",
+    "    for i in t:\n",
+    "        if(len(i)<l):\n",
+    "            ans = i\n",
+    "            l = len(i)\n",
+    "    return ans,l\n",
+    "t = (\"ergerg\",\"agetg4gteg\",\"aethrth\",\"aegegegegoiuowejoiwe\",\"hibriaegieb\")\n",
+    "print(sortest_string_in_tuple(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "4ddc3e69-5141-448f-9f08-5f58a224472d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 3, 6, 10, 15)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 48. Create a tuple of the first `n` triangular numbers.\n",
+    "def tringular_number(n):\n",
+    "    return tuple((i*(i+1))//2 for i in range(1,n+1))\n",
+    "n = 5\n",
+    "print(tringular_number(n))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "82d61f8b-ef2e-4463-a6ea-9f17ec66de83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Main tuple contains subsequence: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 49. Check if a tuple contains another tuple as a subsequence.\n",
+    "def contains_subsequence(main_tuple, sub_tuple):\n",
+    "    sub_len = len(sub_tuple)\n",
+    "    for i in range(len(main_tuple) - sub_len + 1):\n",
+    "        if main_tuple[i:i + sub_len] == sub_tuple:\n",
+    "            return True\n",
+    "    return False\n",
+    "\n",
+    "# Example usage:\n",
+    "main_tuple = (1, 2, 3, 4, 5, 6, 7)\n",
+    "sub_tuple = (3, 4, 5)\n",
+    "result = contains_subsequence(main_tuple, sub_tuple)\n",
+    "\n",
+    "print(\"Main tuple contains subsequence:\", result)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "dfe9b779-63ef-48bb-a12e-6c70fd9e8195",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 50. Create a tuple of alternating 1s and 0s of length `n`.\n",
+    "def create_0_1_tuple(n):\n",
+    "    return tuple(0 if i%2==0 else 1 for i in range(n))\n",
+    "n = 35\n",
+    "print(create_0_1_tuple(n))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5eb00828-cf97-4a58-9a8e-59584db48bcf",
+   "metadata": {},
+   "source": [
+    "List Based question"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "37d51fa3-d7f4-4027-9542-49f55d057f82",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1. Create a list with integers from 1 to 10.\n",
+    "l = [1,2,3,4,5,6,7,8,9,10]\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "20bda888-29b6-4aff-b66d-27b3e0033006",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2. Find the length of a list without using the `len()` function.\n",
+    "print(len(l))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "e54e5a59-4fab-477a-aa3a-f39fc5e349f8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 45]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 3. Append an element to the end of a list\n",
+    "l.append(45)\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "de925092-8e0f-4696-8415-87edabfd5aad",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 56, 5, 6, 7, 8, 9, 10, 45]\n"
+     ]
+    }
+   ],
+   "source": [
+    "specified_index = 3\n",
+    "l[specified_index] = 56\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "6e76d758-a5a8-494e-af60-c4ca11291e93",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 5. Remove an element from a list by its value.\n",
+    "value_to_remove = 3\n",
+    "l.remove(value_to_remove)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "1c977f6b-a969-491a-b379-5b0ab63af3f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 56, 5, 6, 7, 8, 9, 10, 45]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "82cbb293-a87d-42d2-8e0a-ea39f8d5866a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 56, 6, 7, 8, 9, 10, 45]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 6. Remove an element from a list by its index.\n",
+    "index_to_removing = 3\n",
+    "del l[index_to_removing]\n",
+    "print(l)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "b3000fe6-ad1d-45f0-a6ea-0d20860bcc1d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Yes, This element exist in the list\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 7. Check if an element exists in a list.\n",
+    "find_element = 7\n",
+    "# flag = 0\n",
+    "# for i in l:\n",
+    "#     if i==find_element:\n",
+    "#         flag = 1\n",
+    "# if(flag==1):\n",
+    "#     print(\"Yes,Exist an element.\")\n",
+    "# else:\n",
+    "#     print(\"No,This element is not exist.\")\n",
+    "\n",
+    "# Another mothode\n",
+    "if find_element in l:\n",
+    "    print(\"Yes, This element exist in the list\")\n",
+    "else:\n",
+    "    print(\"No, This element not exist in the list\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "4c48caf2-5e7f-4f87-88a4-e6b7784d498b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The first occurance of the element is at index 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 8. Find the index of the first occurrence of an element in a list.\n",
+    "# def first_occurance(l,e):\n",
+    "#     for i in range(len(l)):\n",
+    "#         if(e==l[i]):\n",
+    "#             return i\n",
+    "# l = [1,2,3,4,5,6,6,7,8,8,9]\n",
+    "# e = 6\n",
+    "# print(first_occurance(l,e))\n",
+    "\n",
+    "## Another Method\n",
+    "\n",
+    "l = [1,2,3,4,5,6,6,7,8,8,9]\n",
+    "e = 6\n",
+    "try:\n",
+    "    index = l.index(e)\n",
+    "    print(\"The first occurance of the element is at index\",index)\n",
+    "except:\n",
+    "    print(\"The element Does not exist in the list.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "115cd003-73da-4b38-af92-1a46aa00bd83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 9. Count the occurrences of an element in a list.\n",
+    "l = [1,2,3,4,5,6,7,8,9,1,1,1,5,5,5]\n",
+    "e =  1\n",
+    "# count = 0\n",
+    "# for i in l:\n",
+    "#     if(i == e):\n",
+    "#         count +=1\n",
+    "# print(count)\n",
+    "# Another Method\n",
+    "count = l.count(e)\n",
+    "print(count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "35555256-356b-49b6-8e58-936c201de644",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reversed List: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 10. Reverse the order of elements in a list.\n",
+    "l1 = [1,2,3,4,5,6,7,8,9,10]\n",
+    "# print(l1[::-1])\n",
+    "# Another methode\n",
+    "l1.reverse()\n",
+    "print(\"Reversed List:\",l1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "53ac081a-4fa9-4120-ae3c-17ed29fe48c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 8, 9, 9, 78, 116]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 11. Sort a list in ascending order.\n",
+    "l2 = [4,6,7,9,1,3,5,6,8,8,9,4,5,3,116,78]\n",
+    "l2.sort()\n",
+    "print(l2)\n",
+    "sorted =sorted(l2)\n",
+    "print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "408fa23b-1863-45cc-9f2b-13bf3e007937",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[9, 9, 9, 8, 8, 7, 7, 6, 4, 4, 3, 3, 3, 1, 1]"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 12. Sort a list in descending order.\n",
+    "l3 = [4,8,9,1,3,4,6,3,9,7,9,1,3,7,8]\n",
+    "l3.sort(reverse=True)\n",
+    "l3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "1b8165e8-38dc-46f2-b043-e8a78e35bee4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 13. Create a list of even numbers from 1 to 20.\n",
+    "# l4 = []\n",
+    "# for i in range(1,21):\n",
+    "#     if(i%2==0):\n",
+    "#         l4.append(i)\n",
+    "# print(l4)\n",
+    "\n",
+    "ans = [i for i in range(1,21) if i%2==0]\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "aaaaedc0-851b-430c-9de4-ab9c0ca56db5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 14. Create a list of odd numbers from 1 to 20.\n",
+    "# l4 = []\n",
+    "# for i in range(1,21):\n",
+    "#     if(i%2!=0):\n",
+    "#         l4.append(i)\n",
+    "# print(l4)\n",
+    "\n",
+    "ans = [i for i in range(1,21) if i%2!=0]\n",
+    "ans"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "a327ad81-26b4-45f2-a778-075068fb2e6b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "40\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 15. Find the sum of all elements in a list.\n",
+    "l4 = [1,2,3,4,6,9,4,6,1,3,1]\n",
+    "# sum(l4)\n",
+    "sum = 0\n",
+    "for i in l4:\n",
+    "    sum +=i\n",
+    "print(sum)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "1c91eb15-52f5-4b24-a29a-bdacc1b1b4e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 16. Find the maximum value in a list.\n",
+    "# max(l4)\n",
+    "maxi = 0\n",
+    "for i in l4:\n",
+    "    if(i>maxi):\n",
+    "        maxi = i\n",
+    "print(maxi)\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "0b852796-04bb-4b1b-8362-114540d2df63",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 17. Find the minimum value in a list.\n",
+    "l4 = [1,2,3,4,5,6,7,8,9,5,10,15,25,0]\n",
+    "# min(l4)\n",
+    "mini = 99999\n",
+    "for i in l4:\n",
+    "    if i<mini:\n",
+    "        mini = i\n",
+    "print(mini)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "3143614c-2f08-4f84-aa10-0b5bbfb1fe45",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 18. Create a list of squares of numbers from 1 to 10.\n",
+    "# l5 = []\n",
+    "# for i in range(1,11):\n",
+    "#     l5.append(i**2)\n",
+    "# print(l5)\n",
+    "\n",
+    "ans = [i**2 for i in range(1,11)]\n",
+    "print(ans)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "0b47df0b-13f3-4a6e-9c3f-62f184a679e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[97, 60, 61, 85, 82, 60, 80, 64, 33, 56]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 19. Create a list of random numbers.\n",
+    "import random\n",
+    "random_number_list = [random.randint(1,100) for _ in range(10)]\n",
+    "print(random_number_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "88286382-640d-4c8d-89aa-e57d1aa8af82",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l2 = [1,2,3,4,5,6,7,7,8,8,8,9,9,0,0,1,0,0]\n",
+    "print(list(set(l2)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "6fb87551-5fe9-4444-aec0-b9bd4dfe5463",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Common elements: [4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 21. Find the common elements between two lists.\n",
+    "l1 = [1,2,3,4,5]\n",
+    "l2 = [4,5,6,7,8]\n",
+    "common_elements = list(set(l1) & set(l2))\n",
+    "print(\"Common elements:\",common_elements)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "15937c1d-4db5-4703-a95f-17bc9f0f8d8e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 22. Find the difference between two lists.\n",
+    "l1 = [1,2,3,4,5]\n",
+    "l2 = [4,5,6,7,8]\n",
+    "difference = list(set(l1)-set(l2))\n",
+    "print(difference)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "7f8babe9-222e-4f9d-a5fd-d83e2bd59ad9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 4, 5, 6, 7, 8]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [1,2,3,4,5]\n",
+    "l2 = [4,5,6,7,8]\n",
+    "print(l1 + l2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "c5823696-2581-4802-b8d7-066afba1739d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 4, 6, 8, 10, 12, 14, 16]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 24. Multiply all elements in a list by 2.\n",
+    "l1 = [1,2,3,4,5,6,7,8]\n",
+    "print([i*2 for i in l1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "a2aa4314-5e19-45ca-a7b6-504a6f22dd2d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List after filtering out even number: [1, 3, 5, 7, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 25. Filter out all even numbers from a list.\n",
+    "my_list = [1,2,3,4,5,6,7,8,9,6,6,4]\n",
+    "filtered = [x for x in my_list if x%2 !=0]\n",
+    "print(\"List after filtering out even number:\",filtered)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "cfd606f1-385a-4396-a1ca-81a302bde995",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List of intgers [1, 2, 3, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "string_list = [\"1\",\"2\",\"3\",\"4\",\"5\"]\n",
+    "intger_list = [int(x) for x in string_list]\n",
+    "print(\"List of intgers\",intger_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "aca11adb-fec0-4c3f-98c0-230b604c1136",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['1', '2', '3', '4', '5']\n"
+     ]
+    }
+   ],
+   "source": [
+    "str_list = [str(x) for x in intger_list]\n",
+    "print(str_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "2bf033c9-2554-48d9-8bea-bff720eff301",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "flattened list [1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 28. Flatten a nested list.\n",
+    "import itertools\n",
+    "nested_list = [[1,2,3],[4,4,5],[6,7,8,9,10]]\n",
+    "flattened_list = list(itertools.chain(*nested_list))\n",
+    "print(\"flattened list\",flattened_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ba5ac312-789b-4c32-adfd-66d1960899ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 29. Create a list of the first 10 Fibonacci numbers.\n",
+    "def fibonacci_number(n):\n",
+    "    fib = [0,1]\n",
+    "    for i in range(2,n):\n",
+    "        fib.append(fib[-1]+fib[-2])\n",
+    "    return fib\n",
+    "n = 5\n",
+    "print(fibonacci_number(n))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "e165e484-074f-4e04-9cb1-66ddfb40548b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[7, 8, 9, 1, 2, 3, 4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 31. Rotate a list to the left by `n` positions.\n",
+    "l = [1,2,3,4,5,6,7,8,9]\n",
+    "n = 6\n",
+    "l\n",
+    "print(l[n:] + l[:n])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "e0e3cf41-a650-4f08-94f8-d5753a5e2894",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[7, 8, 9, 1, 2, 3, 4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 32. Rotate a list to the right by `n` positions.\n",
+    "n=3\n",
+    "print(l[-n:] + l[:-n])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "009fb134-986a-4fb6-8d26-3e303845e1c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your prime number list: [2, 3, 5, 7, 11, 13, 17, 19, 23]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 33. Create a list of prime numbers up to 50.\n",
+    "def is_prime(num):\n",
+    "    if num<=1:\n",
+    "        return false\n",
+    "    for i in range(2,int(num**(0.5))+1):\n",
+    "        if num%i==0:\n",
+    "            return False\n",
+    "    return True\n",
+    "def generate_prime(limit):\n",
+    "    prime = []\n",
+    "    for num in range(2,limit + 1):\n",
+    "        if is_prime(num):\n",
+    "            prime.append(num)\n",
+    "    return prime\n",
+    "n = 25\n",
+    "print(\"This is your prime number list:\",generate_prime(n))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c16d943d-4c80-4368-bb44-3bcf94013cc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'list' object has no attribute 'split'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[2], line 3\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# 34. Split a list into chunks of size `n`.\u001b[39;00m\n\u001b[1;32m      2\u001b[0m l \u001b[38;5;241m=\u001b[39m[\u001b[38;5;241m7\u001b[39m, \u001b[38;5;241m8\u001b[39m, \u001b[38;5;241m9\u001b[39m, \u001b[38;5;241m1\u001b[39m, \u001b[38;5;241m2\u001b[39m, \u001b[38;5;241m3\u001b[39m, \u001b[38;5;241m4\u001b[39m, \u001b[38;5;241m5\u001b[39m, \u001b[38;5;241m6\u001b[39m]\n\u001b[0;32m----> 3\u001b[0m ans \u001b[38;5;241m=\u001b[39m \u001b[43ml\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43msplit\u001b[49m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m,\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "\u001b[0;31mAttributeError\u001b[0m: 'list' object has no attribute 'split'"
+     ]
+    }
+   ],
+   "source": [
+    "# 34. Split a list into chunks of size `n`.\n",
+    "# l =[7, 8, 9, 1, 2, 3, 4, 5, 6]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "63535ab2-e6a0-4764-b735-3a976564fd7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "75\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 35. Find the second largest number in a list.\n",
+    "l = [1,2,3,4,5,67,8,9,89,45,75]\n",
+    "ist = 0\n",
+    "second = 0\n",
+    "l.sort()\n",
+    "for i in l:\n",
+    "    if(i>ist):\n",
+    "        second = ist\n",
+    "        ist = i\n",
+    "        \n",
+    "print(second)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "f702a4f3-485b-416d-a901-6cd886b0091d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original list [1, 2, 3, 4, 5, 6]\n",
+      "List Afte squaring each element: [1, 4, 9, 16, 25, 36]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 36. Replace every element in a list with its square.\n",
+    "l1 = [1,2,3,4,5,6]\n",
+    "squared_list = [i**2 for i in l1]\n",
+    "print(\"Original list\",l1)\n",
+    "print(\"List Afte squaring each element:\",squared_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "3bd78072-95a6-49c3-b94c-ac1236f95c06",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original list: ['a', 'b', 'c', 'd']\n",
+      "Converted dictionary: {'a': 0, 'b': 1, 'c': 2, 'd': 3}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 37. Convert a list to a dictionary where list elements become keys and their\n",
+    "# indices become values.\n",
+    "l = [\"a\",\"b\",\"c\",\"d\"]\n",
+    "list_to_dict = {value: index for index,value in enumerate(l)}\n",
+    "print(\"Original list:\",l)\n",
+    "print(\"Converted dictionary:\",list_to_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "25ba28a8-6edb-409b-9df2-e5f2f1158b49",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "shuffled list: [6, 4, 3, 1, 5, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 38. Shuffle the elements of a list randomly.\n",
+    "import random\n",
+    "l = [1,2,3,4,5,6]\n",
+    "random.shuffle(l)\n",
+    "print(\"shuffled list:\",l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "62f2e93d-9ca5-4d75-a0e8-79beaac982bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First 10 factorial numbers: [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 39. Create a list of the first 10 factorial numbers.\n",
+    "import math\n",
+    "fact_list = [math.factorial(i) for i in range(10)]\n",
+    "print(\"First 10 factorial numbers:\",fact_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "8afc001d-32a0-4057-bdf5-90bb40a659b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List1 and List2 have common elements: True\n",
+      "List1 and List3 have common elements: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 40. Check if two lists have at least one element in common.\n",
+    "def have_common_element(list1, list2):\n",
+    "    return bool(set(list1) & set(list2))\n",
+    "\n",
+    "# Example usage\n",
+    "list1 = [1, 2, 3, 4, 5]\n",
+    "list2 = [5, 6, 7, 8, 9]\n",
+    "list3 = [10, 11, 12]\n",
+    "\n",
+    "print(f\"List1 and List2 have common elements: {have_common_element(list1, list2)}\")\n",
+    "print(f\"List1 and List3 have common elements: {have_common_element(list1, list3)}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "e2ddac85-d0f5-4099-9a1a-103392f69172",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List after clear(): []\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 41. Remove all elements from a list.\n",
+    "my_list = [1,2,3,4,5]\n",
+    "my_list.clear()\n",
+    "print(\"List after clear():\",my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "20f0a8e1-43f1-4a86-92a2-5f98dbfd250d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 0, 0, 0, 8, 9, 2, 3, 1, 0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l = [1,2,3,-8,-78,-36,8,9,2,3,1,0]\n",
+    "for i in range(len(l)):\n",
+    "    if(l[i]<0):\n",
+    "        l[i] = 0\n",
+    "print(l)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "b4ceee65-3e51-43b3-b31d-74e0b3c356c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['rahul',\n",
+       " 'Kumar',\n",
+       " 'Bhagat',\n",
+       " 'is',\n",
+       " 'the',\n",
+       " 'best',\n",
+       " 'things',\n",
+       " 'and',\n",
+       " 'upper',\n",
+       " 'way']"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s = \"rahul Kumar Bhagat is the best things and upper way\"\n",
+    "ans = list(s.split())\n",
+    "ans"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "93ca6f1a-c201-487c-b170-c82772d7d8e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "rahul Kumar Bhagat is the best things and upper way\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = ['rahul',\n",
+    " 'Kumar',\n",
+    " 'Bhagat',\n",
+    " 'is',\n",
+    " 'the',\n",
+    " 'best',\n",
+    " 'things',\n",
+    " 'and',\n",
+    " 'upper',\n",
+    " 'way']\n",
+    "ans1 = \"\"\n",
+    "ans1 +=\" \".join(l1)\n",
+    "print(ans1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "f79c44b6-890e-4dc5-b6fc-eca1751ec2a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 4, 9, 16, 25, 36]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 45. Create a list of the first `n` powers of 2.\n",
+    "n = 6\n",
+    "print([i**2 for i in range(n+1)])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "86f680ee-6963-497f-8e5f-7e962dd7cd54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Your longest string is 'Bhagat' and length of this string is '6'\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 46. Find the longest string in a list of strings.\n",
+    "l1 = ['rahul',\n",
+    " 'Kumar',\n",
+    " 'Bhagat',\n",
+    " 'is',\n",
+    " 'the',\n",
+    " 'best',\n",
+    " 'things',\n",
+    " 'and',\n",
+    " 'upper',\n",
+    " 'way']\n",
+    "longest = 0\n",
+    "string = \"\"\n",
+    "for i in l1:\n",
+    "    if(longest<len(i)):\n",
+    "        longest = len(i)\n",
+    "        string = i\n",
+    "print(f\"Your longest string is '{string}' and length of this string is '{longest}'\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "e8ae278a-6e28-442c-bc39-bd40f3f1d86b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Your Smallest string is 'is' and length of this string is '2'\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 47. Find the shortest string in a list of strings.\n",
+    "l1 = ['rahul',\n",
+    " 'Kumar',\n",
+    " 'Bhagat',\n",
+    " 'is',\n",
+    " 'the',\n",
+    " 'best',\n",
+    " 'things',\n",
+    " 'and',\n",
+    " 'upper',\n",
+    " 'way']\n",
+    "smallest = 9999\n",
+    "string = \"\"\n",
+    "for i in l1:\n",
+    "    if(smallest>len(i)):\n",
+    "        smallest = len(i)\n",
+    "        string = i\n",
+    "print(f\"Your Smallest string is '{string}' and length of this string is '{smallest}'\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "08b0f8e6-e88e-45fd-bf1c-6596fb41b92a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 6, 10, 15]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 48. Create a list of the first `n` triangular numbers.\n",
+    "def tringular_number(n):\n",
+    "    return [(i*(i+1))//2 for i in range(1,n+1)]\n",
+    "n = 5\n",
+    "print(tringular_number(n))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "a9b8e3b7-120e-43e0-9811-ac75ab5144d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is [2, 4, 6] a subsequence of [1, 2, 3, 4, 5, 6]? True\n",
+      "Is [3, 5, 7] a subsequence of [1, 2, 3, 4, 5, 6]? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 49. Check if a list contains another list as a subsequence.\n",
+    "def is_subsequence(main_list, sub_list):\n",
+    "    \"\"\"Check if sub_list is a subsequence of main_list.\"\"\"\n",
+    "    it = iter(main_list)\n",
+    "    return all(item in it for item in sub_list)\n",
+    "\n",
+    "# Example usage\n",
+    "main_list = [1, 2, 3, 4, 5, 6]\n",
+    "sub_list1 = [2, 4, 6]\n",
+    "sub_list2 = [3, 5, 7]\n",
+    "\n",
+    "print(f\"Is {sub_list1} a subsequence of {main_list}? {is_subsequence(main_list, sub_list1)}\")\n",
+    "print(f\"Is {sub_list2} a subsequence of {main_list}? {is_subsequence(main_list, sub_list2)}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "926d9020-eca5-478c-806a-9c34070e6650",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original list: [10, 20, 30, 40, 50]\n",
+      "List after swapping elements: [10, 40, 30, 20, 50]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 50. Swap two elements in a list by their indices\n",
+    "def swap_elements(my_list, index1, index2):\n",
+    "    \"\"\"Swap elements in the list at index1 and index2.\"\"\"\n",
+    "    if index1 < 0 or index1 >= len(my_list) or index2 < 0 or index2 >= len(my_list):\n",
+    "        raise IndexError(\"Index out of range.\")\n",
+    "    \n",
+    "    # Swap the elements\n",
+    "    my_list[index1], my_list[index2] = my_list[index2], my_list[index1]\n",
+    "\n",
+    "# Example usage\n",
+    "my_list = [10, 20, 30, 40, 50]\n",
+    "index1 = 1\n",
+    "index2 = 3\n",
+    "\n",
+    "print(\"Original list:\", my_list)\n",
+    "\n",
+    "swap_elements(my_list, index1, index2)\n",
+    "\n",
+    "print(\"List after swapping elements:\", my_list)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f51bd541-13df-4432-959d-fdf62015a613",
+   "metadata": {},
+   "source": [
+    "Set Based Practice Problem :"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3f413c37-1811-4f83-9008-ebfab2433cc4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1. Create a set with integers from 1 to 5.\n",
+    "se = {1,2,3,4,5}\n",
+    "print(se)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "5d0f766d-46b0-47d7-96c9-1dacdf723667",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2. Add an element to a set.\n",
+    "se.add(6)\n",
+    "print(se)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "70e4f51a-8c00-4860-83b4-757c483dc8ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 3. Remove an element from a set.\n",
+    "se.remove(6)\n",
+    "print(se)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "a91e07ba-fae6-4178-9257-439c9c0a047e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 4. Check if an element exists in a set.\n",
+    "my_set = {1,2,3,4,5,6}\n",
+    "ele = 3\n",
+    "exists = ele in my_set\n",
+    "print(exists)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "f62af4e0-4304-4036-a53c-a1c3dedba0db",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 5. Find the length of a set without using the `len()` function.\n",
+    "my_set = {1,2,3,4,5,6}\n",
+    "count = 0\n",
+    "for i in my_set:\n",
+    "    count +=1\n",
+    "print(count)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c14b6322-951b-42e0-a0c0-8337fa5e827a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set()\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 6. Clear all elements from a set.\n",
+    "my_set = {1,2,3,4,5,6}\n",
+    "my_set.clear()\n",
+    "print(my_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "bc7944a9-4a8d-46ff-82b4-a96cf6279b93",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set of even number from 1 to 10: {2, 4, 6, 8, 10}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 7. Create a set of even numbers from 1 to 10.\n",
+    "even_set = {num for num in range(1,11) if num%2==0}\n",
+    "print(\"Set of even number from 1 to 10:\",even_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "8b8f9dbd-e981-40ea-947d-35955c87e5ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set of odd number from 1 to 10: {1, 3, 5, 7, 9}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 8. Create a set of odd numbers from 1 to 10.\n",
+    "odd_set = {num for num in range(1,11) if num%2!=0}\n",
+    "print(\"set of odd number from 1 to 10:\",odd_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "8b09dd9a-baa5-49e6-858b-a3d831411e45",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your unioun:{1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 9. Find the union of two sets.\n",
+    "set1 = {1,2,3,4,5}\n",
+    "set2 = {1,2,3,4}\n",
+    "print(f\"This is your unioun:{set1.union(set2)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "ea2e7d36-5b04-49e9-8495-ef08ef531f4b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your intersection: {1, 2, 3, 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 10. Find the intersection of two sets.\n",
+    "set1 = {1,2,3,4,5}\n",
+    "set2 = {1,2,3,4}\n",
+    "print(f\"This is your intersection: {set1.intersection(set2)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "2628082d-5f64-45d6-97a0-f75a6a956217",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your Difference: {6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 11. Find the difference between two sets.\n",
+    "set1 = {1,2,3,4,5,6}\n",
+    "set2 = {1,2,3,4,5}\n",
+    "print(f\"This is your Difference: {set1.difference(set2)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "4617dd1c-2bf2-4218-bac3-7d83b5bdf91e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Yes\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 12. Check if a set is a subset of another set.\n",
+    "set1 = {1,2,3,4,5,6}\n",
+    "set2 = {4,5,6}\n",
+    "if(set2.issubset(set1)):\n",
+    "    print(\"Yes\")\n",
+    "else:\n",
+    "    print(\"No\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "8b714ed1-2d4d-476a-a4f2-fd7e04f707d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 13. Check if a set is a superset of another set.\n",
+    "set1 = {1,2,3,4}\n",
+    "set2 = {1,2,3,4}\n",
+    "print(set2.issuperset(set1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "fe43a6d2-a4b4-4087-a65a-c5e0ac1f582c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 14. Create a set from a list.\n",
+    "l = [1,2,3,4,5,6]\n",
+    "s1 = set(l)\n",
+    "print(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "6ae72320-8618-4f39-80af-04052c88e2f7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your list which is converted through a set: [1, 2, 3, 4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 15. Convert a set to a list.\n",
+    "set1 = {1,2,3,4,5,6}\n",
+    "print(\"This is your list which is converted through a set:\",list(set1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "50ab0d73-6140-46b8-a747-31b0570054ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Removed element: 1\n",
+      "set after removal: {2, 3, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 16. Remove a random element from a set.\n",
+    "import random\n",
+    "\n",
+    "my_set = {1,2,3,4,5,6}\n",
+    "if my_set:\n",
+    "    removed_ele = my_set.pop()\n",
+    "    print(f\"Removed element: {removed_ele}\")\n",
+    "else:\n",
+    "    print(\"The set is empty, no element to remove.\")\n",
+    "print(\"set after removal:\",my_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b3041fce-0658-43c7-8bb8-5db314b3fa2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "{2, 3, 4, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 17. Pop an element from a set.\n",
+    "my_set2 = {6,1,2,3,4}\n",
+    "print(my_set2.pop())\n",
+    "print(my_set2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6b845019-6dbf-4010-81b4-a5611fa43cb8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "DO set_a and set_b have no elements in common :True\n",
+      "Do set_a and set_c have no elements in common: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 18. Check if two sets have no elements in common.\n",
+    "set_a = {1,2,3}\n",
+    "set_b = {4,5,6}\n",
+    "set_c = {3,4,5}\n",
+    "\n",
+    "are_disjoint_ab = set_a.isdisjoint(set_b)\n",
+    "print(f\"DO set_a and set_b have no elements in common :{are_disjoint_ab}\")\n",
+    "\n",
+    "are_disjoint_ac = set_a.isdisjoint(set_c)\n",
+    "print(f\"Do set_a and set_c have no elements in common: {are_disjoint_ac}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c98dec8b-91d3-41cb-b40f-269dd1f33227",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Symmetric difference between set_a and set_b: {1, 2, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 19. Find the symmetric difference between two sets.\n",
+    "set_a = {1,2,3,4}\n",
+    "set_b = {3,4,5,6}\n",
+    "sym_difference = set_a.symmetric_difference(set_b)\n",
+    "print(f\"Symmetric difference between set_a and set_b: {sym_difference}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "04002f48-13d0-439f-a6c7-0d37e6d96cec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set_a after update:{1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 20. Update a set with elements from another set.\n",
+    "set_a = {1,2,3}\n",
+    "set_b = {3,4,5}\n",
+    "set_a |= set_b\n",
+    "print(f\"set_a after update:{set_a }\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "c2de39ed-1173-403b-a711-8b021a40a235",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your prime set {2, 3, 5, 7, 11}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 21. Create a set of the first 5 prime numbers.\n",
+    "def is_prime(num):\n",
+    "    if num<=1:\n",
+    "        return False\n",
+    "    for i in range(2,int(num**(0.5))+1):\n",
+    "        if num%i==0:\n",
+    "            return False\n",
+    "    return True\n",
+    "n = 12\n",
+    "prime_set = {i for i in range(n) if(is_prime(i))}\n",
+    "print(f\"This is your prime set {prime_set}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "51feaf1a-529d-4398-a757-33161ee22d64",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Are set_a and set_b identical? True\n",
+      "Are Set_a and set_c identical? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 22. Check if two sets are identical.\n",
+    "set_a = {1,2,3,4}\n",
+    "set_b = {4,3,2,1}\n",
+    "set_c = {1,2,3,5}\n",
+    "are_identical_ab = set_a == set_b\n",
+    "print(f\"Are set_a and set_b identical? {are_identical_ab}\")\n",
+    "\n",
+    "are_identical_ac = set_a == set_c\n",
+    "print(f\"Are Set_a and set_c identical? {are_identical_ac}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "28f69fcf-539e-4914-ae1b-0f1a748c359a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Frozen Set: frozenset({1, 2, 3, 4, 5})\n"
+     ]
+    }
+   ],
+   "source": [
+    "example_list = [1,2,3,4,5]\n",
+    "frozen_set = frozenset(example_list)\n",
+    "print(\"Frozen Set:\",frozen_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "09609397-a90d-47b2-877f-4dddef7b3c16",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is this disjoint set_1 and set_2 'False'\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 24. Check if a set is disjoint with another set.\n",
+    "set_1 = {1,2,3,4,5}\n",
+    "set_2 = {3,4,7,5,6}\n",
+    "print(f\"Is this disjoint set_1 and set_2 '{set_1.isdisjoint(set_2)}'\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "cf1452f3-9f9f-429a-9ce2-d210004161bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is your square from 1 to 6 :{1, 4, 9, 16, 25}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 25. Create a set of squares of numbers from 1 to 5.\n",
+    "ans = {i**2 for i in range(1,6)}\n",
+    "print(f\"This is your square from 1 to 6 :{ans}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "cf86e0b2-4977-4939-a93d-a8c52410dbd9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{2, 4, 6, 8, 10}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 26. Filter out all even numbers from a set.\n",
+    "set_1 = {1,2,3,4,5,6,7,8,9,10}\n",
+    "set_even = {i for i in set_1 if(i%2==0)}\n",
+    "print(set_even)\n",
+    "\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "09ae4140-dbaf-4cc9-9301-cd9e63ed2ad4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Origianal set: {1, 2, 3, 4, 5}\n",
+      "set with element multiplied by 2: {2, 4, 6, 8, 10}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 27. Multiply all elements in a set by 2.\n",
+    "set1 = {1,2,3,4,5}\n",
+    "multiplied_set = {ele * 2 for ele in set1}\n",
+    "print(\"Origianal set:\",set1)\n",
+    "print(\"set with element multiplied by 2:\",multiplied_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a6f90879-0c82-49fb-a12e-1e9d24193003",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is set of random number:{33, 71, 8, 41, 77, 13, 79, 80, 82, 93}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 28. Create a set of random numbers.\n",
+    "import random\n",
+    "random_number_set = {random.randint(1,100) for _ in range(10)}\n",
+    "print(f\"This is set of random number:{random_number_set}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "bd39aa05-b011-4688-b0a0-1bc5697a7c86",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is the set is empty? True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 29. Check if a set is empty.\\\n",
+    "my_set = set()\n",
+    "\n",
+    "is_empty = not my_set\n",
+    "print(f\"Is the set is empty? {is_empty}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "457d8da8-9f97-49a4-83e1-0ba849c0757b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Nested Set: {frozenset({1, 2, 3}), frozenset({4, 5, 6}), frozenset({8, 9, 7})}\n"
+     ]
+    }
+   ],
+   "source": [
+    "set_a = frozenset({1,2,3})\n",
+    "set_b = frozenset({4,5,6})\n",
+    "set_c = frozenset({7,8,9})\n",
+    "nested_set = {set_a,set_b,set_c}\n",
+    "print(\"Nested Set:\",nested_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "c0beef69-e594-4671-9e13-50faf8893e38",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set after discaard: {1, 2, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 31. Remove an element from a set using the discard method.\n",
+    "my_set = {1,2,3,4,5}\n",
+    "element_to_remove = 3\n",
+    "my_set.discard(element_to_remove)\n",
+    "print(\"set after discaard:\",my_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "692ab806-b3ae-47dc-9a22-3f7d900835d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Are set_a and set_b equal? True\n",
+      "Are set_a and set_c equal? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 32. Compare two sets.\n",
+    "set_a = {1,2,3,4}\n",
+    "set_b = {4,3,2,1}\n",
+    "set_c = {1,2,3,5}\n",
+    "are_equale_ab = set_a == set_b\n",
+    "print(f\"Are set_a and set_b equal? {are_equale_ab}\")\n",
+    "\n",
+    "are_equale_ac = set_a == set_c\n",
+    "print(f\"Are set_a and set_c equal? {are_equale_ac}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "dae48421-97bb-4a21-9913-dc97edf35392",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set from string: {'e', 'r', 'W', 'o', 'd', 'H', 'l', ' '}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 33. Create a set from a string.\n",
+    "example_string = \"Hello World\"\n",
+    "string_set = set(example_string)\n",
+    "print(\"set from string:\",string_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "141549a5-3d69-4574-8373-6936eecd635e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set of itegers: {1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 34. Convert a set of strings to a set of integers.\n",
+    "string_set = {\"1\", \"2\", \"3\", \"4\", \"5\"}\n",
+    "integer_set = {int(ele) for ele in string_set}\n",
+    "print(\"set of itegers:\",integer_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "2953fed6-51bd-45e7-bcd0-d65a883baca6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set of string {'5', '3', '2', '1', '4'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "intger_set = {1,3,5,6,8}\n",
+    "string_set = {str(ele) for ele in integer_set}\n",
+    "print(\"set of string\",string_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "55abf46c-f8c4-47a9-9c22-7a9413cc6646",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is a converted set from tuple {1, 2, 3, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 36. Create a set from a tuple.\n",
+    "t = (1,2,3,4,5,6)\n",
+    "print(\"This is a set converted set from tuple\",set(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "c9a974f9-30c5-45c0-ba42-2552490c8251",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is a tuple converted from set: (1, 2, 3, 4, 5)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 37. Convert a set to a tuple.\n",
+    "s = {1,2,3,4,5}\n",
+    "print(\"This is a tuple converted from set:\",tuple(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "3c16750f-082b-4bd2-92d5-0c8993eee602",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is a maximum value: 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = {1,2,3,4,5,6,7,9}\n",
+    "print(\"This is a maximum value:\",max(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "5f387b25-026c-49c6-bb17-c50ef85b0991",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is a minimum value: 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = {1,2,3,4,5,6,7,9}\n",
+    "print(\"This is a minimum value:\",min(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "0eaf47bf-6134-41f7-963d-814a37105b11",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter input separated by space: 2 6 9 7 8 3 4 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set input by user {'6', '9', '8', '7', '3', '2', '4'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = input(\"Enter input separated by space:\")\n",
+    "s1 = s.split(\" \")\n",
+    "print(\"set input by user\",set(s1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "09c5eeee-89c9-4a64-8cc4-53d57d938794",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set()\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 41. Check if the intersection of two sets is empty.\n",
+    "set1 = set()\n",
+    "set2 = set()\n",
+    "print(set1.intersection(set2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "2545982d-fdbc-42b0-bbb8-55ada7e21624",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is fibonacci 5 number: {0, 1, 2, 3, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 42. Create a set of the first 5 Fibonacci numbers.\n",
+    "def fibonacci_set(n):\n",
+    "    fib = [0,1]\n",
+    "    for i in range(1,n):\n",
+    "        fib.append(fib[-2] + fib[-1])\n",
+    "    return set(fib)\n",
+    "n = 5\n",
+    "print(\"This is fibonacci 5 number:\",fibonacci_set(n))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "659650b1-fa33-42bf-9205-78e19008c00f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This set is used to remove all duplicate from the list: {1, 2, 3, 4, 5, 6, 7}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 43. Remove duplicates from a list using sets.\n",
+    "l1 = [1,2,3,4,5,1,2,3,5,6,7,3,6]\n",
+    "print(\"This set is used to remove all duplicate from the list:\",set(l1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "51390bcf-3219-42a7-a12d-04acbab9c18d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Do set_a and set_b have the same elements? True\n",
+      "Do set_a and set_c have the same elements? True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 44. Check if two sets have the same elements, regardless of their count.\n",
+    "# Example sets\n",
+    "set_a = {1, 2, 3, 4, 5}\n",
+    "set_b = {5, 4, 3, 2, 1}\n",
+    "set_c = {1, 2, 3, 3, 4, 5, 5}\n",
+    "\n",
+    "# Check if set_a and set_b have the same elements\n",
+    "same_elements_ab = set_a == set_b\n",
+    "print(f\"Do set_a and set_b have the same elements? {same_elements_ab}\")\n",
+    "\n",
+    "# Check if set_a and set_c have the same elements\n",
+    "same_elements_ac = set_a == set_c\n",
+    "print(f\"Do set_a and set_c have the same elements? {same_elements_ac}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "c4c4d9f1-7f92-4e56-9f06-63454aca1eb9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 4, 9, 16}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 45. Create a set of the first `n` powers of 2.\n",
+    "n = 5\n",
+    "ans = {i**2 for i in range(n)}\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "2ccc19d7-9e9d-4a62-85b4-efb30eb4c88d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this is a common element {1, 2, 3, 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 46. Find the common elements between a set and a list.\n",
+    "set1 = {1,2,3,4,5}\n",
+    "l1 = [1,2,3,4,6]\n",
+    "print(\"this is a common element\",set1.intersection(set(l1)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "e1d83aa1-0b8f-4aed-a2e4-59560f860544",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set of the first 10 triangular numbers: {1, 3, 36, 6, 10, 45, 15, 21, 55, 28}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 47. Create a set of the first `n` triangular numbers.\n",
+    "def triangular_numbers(n):\n",
+    "    # Use a set comprehension to generate the first n triangular numbers\n",
+    "    return { (i * (i + 1)) // 2 for i in range(1, n + 1) }\n",
+    "\n",
+    "# Example usage: create a set of the first 10 triangular numbers\n",
+    "n = 10\n",
+    "triangular_set = triangular_numbers(n)\n",
+    "\n",
+    "print(\"Set of the first\", n, \"triangular numbers:\", triangular_set)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "f91d2ddc-6511-404a-ba30-060f18def52b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is set_b a subset of set_a? True\n",
+      "Is set_c a subset of set_a? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 48. Check if a set contains another set as a subset.\n",
+    "# Example sets\n",
+    "set_a = {1, 2, 3, 4, 5}\n",
+    "set_b = {2, 3}\n",
+    "set_c = {6, 7}\n",
+    "\n",
+    "# Check if set_b is a subset of set_a\n",
+    "is_subset_ba = set_b.issubset(set_a)\n",
+    "print(f\"Is set_b a subset of set_a? {is_subset_ba}\")\n",
+    "\n",
+    "# Check if set_c is a subset of set_a\n",
+    "is_subset_ca = set_c.issubset(set_a)\n",
+    "print(f\"Is set_c a subset of set_a? {is_subset_ca}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "da59c7d4-fe52-4683-8a9d-e4406c90ca68",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set of alternating 1s and 0s of length 5 : {0, 1}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 49. Create a set of alternating 1s and 0s of length `n`.\n",
+    "def alternating_set(n):\n",
+    "    # Create a list of alternating 1s and 0s\n",
+    "    alternating_list = [i % 2 for i in range(n)]\n",
+    "    \n",
+    "    # Convert the list to a set (which will remove duplicates)\n",
+    "    return set(alternating_list)\n",
+    "\n",
+    "# Example usage: create a set of alternating 1s and 0s of length 5\n",
+    "n = 5\n",
+    "alternating_set_result = alternating_set(n)\n",
+    "\n",
+    "print(\"Set of alternating 1s and 0s of length\", n, \":\", alternating_set_result)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "09a097e9-16a7-421b-877e-86a95d8442d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Merged set using union(): {1, 2, 3, 4, 5, 6, 7}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 50. Merge multiple sets into one.\n",
+    "# Example sets\n",
+    "set1 = {1, 2, 3}\n",
+    "set2 = {3, 4, 5}\n",
+    "set3 = {5, 6, 7}\n",
+    "\n",
+    "# Merge sets using union() method\n",
+    "merged_set = set1.union(set2, set3)\n",
+    "\n",
+    "print(\"Merged set using union():\", merged_set)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ec56b764-3a55-44ed-8b72-8dea81c4410f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d4002a6b-06a8-4bdc-8f42-0249d0d1b29e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cc854f2d-4234-4ea5-a920-bf95dba4b91f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "08a448a2-d132-47b3-b780-94689a6136c0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bbffb768-9f8e-4c6a-b4f7-33ec16c299fa",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f67ad7dd-d7c3-4b6b-b2e3-33b0c359eb6c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ec112ae6-2f9d-4664-9308-6632d47750a5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "256436b8-2226-49d8-8378-abf24ed83e6d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d03c2553-e900-4e5e-a034-61f3da14da0e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
